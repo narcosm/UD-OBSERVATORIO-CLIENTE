@@ -1,18 +1,51 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <!--
+    <v-container >
+    <v-layout >
+      <v-flex class="xl12" >
+        -->
+  <v-carousel height="auto">
+    <v-carousel-item
+      v-for="(item, i) in items"
+      :key="i"
+      :src="item.src"
+      reverse-transition="fade-transition"
+    ></v-carousel-item>
+  </v-carousel>
+  <!-- 
+         </v-flex>
+    </v-layout>
+  </v-container>  
+  -->
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {
+      items: [
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+        },
+      ],
+         
+    };
+  },
+  methods: {
+ 
+   },
+  mounted() {
+    if (this.$route.query.reload && localStorage.reload !== "OK") {
+      localStorage.reload = "OK";
+      location.reload();
+    }
+
+   },
+};
 </script>

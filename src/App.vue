@@ -40,17 +40,18 @@
               <img :src="url_image" :alt="name" />
             </v-avatar>
           </div>
-          <!-- 
-            <a class="pull-right" 
+         
+            <a class="pull-right sinLine mr-2" 
           v-else 
-          href="https://apirepository.planestic.udistrital.edu.co/api/google" >
-          -->
-
+          href="https://observatorio.planestic.udistrital.edu.co/api/google" >
+         
+ <!-- 
           <a
             class="pull-right sinLine mr-2"
             v-else
             href="http://192.168.0.6:3025/google"
           >
+           -->
             <v-icon> mdi-account </v-icon>
           </a>
         </div>

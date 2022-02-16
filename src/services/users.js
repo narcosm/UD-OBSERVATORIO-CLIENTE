@@ -1,6 +1,6 @@
 import axios from "axios";
-//const repositoryUrl = 'https://apirepository.planestic.udistrital.edu.co/api'
-const userUrl = 'http://192.168.0.6:3025'
+const userUrl = 'https://observatorio.planestic.udistrital.edu.co/api'
+//const userUrl = 'http://192.168.0.6:3025'
 class UsersService {
 
     getUsers() {

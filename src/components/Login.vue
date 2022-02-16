@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="google-icon center">
-      <!--<a href="https://apirepository.planestic.udistrital.edu.co/api/google">-->
-      <a href="http://192.168.0.6:3025/google" class="white--text sinLine">
+     <a href="https://observatorio.planestic.udistrital.edu.co/api/google" class="white--text sinLine">
+       <!--<a href="http://192.168.0.6:3025/google" class="white--text sinLine">-->
         <button class="btn btn-light">
           <img
             class="google-icon center"
